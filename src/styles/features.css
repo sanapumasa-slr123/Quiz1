@@ -1,0 +1,68 @@
+/* Features Section Styles */
+.features-section {
+  background-color: #ffffff;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  transform: translateY(-4px);
+  border-color: #0066cc;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.feature-card h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature-card p {
+  flex-grow: 1;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-card {
+    padding: 1rem;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  .feature-card h5 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}

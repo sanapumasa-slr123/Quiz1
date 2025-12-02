@@ -1,0 +1,259 @@
+/* Pages Styles */
+
+/* About Section */
+.about-section {
+  background-color: #fff;
+}
+
+.about-section h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-section .lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* MVP Cards */
+.mvp-section {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.mvp-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding: 2rem;
+  height: 100%;
+}
+
+.mvp-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  transform: translateY(-4px);
+  border-color: #0066cc;
+}
+
+.mvp-card h4 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.mvp-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.value-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding: 2rem;
+  height: 100%;
+}
+
+.value-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  transform: translateY(-4px);
+  border-color: #0066cc;
+}
+
+.value-card h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  transform: translateY(-4px);
+  border-color: #0066cc;
+}
+
+.team-image {
+  border-radius: 0;
+  border: 2px solid #dee2e6;
+  object-fit: cover;
+}
+
+/* Contact Cards */
+.contact-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding: 2rem;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  transform: translateY(-4px);
+  border-color: #0066cc;
+}
+
+.contact-card h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Office Hours & Messaging */
+.office-hours, .messaging-platforms {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+}
+
+.office-hours p, .messaging-platforms p {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.contact-form-section form {
+  background: white;
+  padding: 2rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+}
+
+.form-control, .form-label {
+  border-radius: 0;
+}
+
+.form-control {
+  border-color: #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.cta-section h2 {
+  font-weight: 700;
+  color: white;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Highlights */
+.highlights-section {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.highlight-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding: 2rem;
+  height: 100%;
+}
+
+.highlight-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  transform: translateY(-4px);
+  border-color: #0066cc;
+}
+
+.metric {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .mvp-card, .value-card, .team-card, .contact-card, .highlight-card {
+    padding: 1.5rem;
+  }
+
+  .map-placeholder {
+    min-height: 300px;
+  }
+
+  .cta-section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .mvp-card, .value-card, .team-card, .contact-card, .highlight-card {
+    padding: 1rem;
+  }
+
+  .about-section h2,
+  .mvp-section h2,
+  .values-section h2,
+  .team-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .map-placeholder {
+    min-height: 250px;
+  }
+
+  .contact-form-section form {
+    padding: 1.5rem;
+  }
+}
