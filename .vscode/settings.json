@@ -1,0 +1,12 @@
+{
+  // Hide common binary and virtual environment files from Explorer to avoid
+  // opening them accidentally in the text editor.
+  "files.exclude": {
+    "**/venv": true,
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/venv": true,
+    "**/node_modules": true
+  }
+}
