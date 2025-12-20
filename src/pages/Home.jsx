@@ -23,7 +23,9 @@ function Home() {
     const fetchServices = async () => {
       try {
         const response = await getServices();
-        setServices(response.data);
+        // Handle both paginated and direct array responses
+        const data = response.data.results || response.data;
+        setServices(Array.isArray(data) ? data : []);
       } catch (err) {
         console.error('Error fetching services:', err);
         setErrorServices('Failed to load services');
@@ -35,7 +37,9 @@ function Home() {
     const fetchTestimonials = async () => {
       try {
         const response = await getTestimonials();
-        setTestimonials(response.data);
+        // Handle both paginated and direct array responses
+        const data = response.data.results || response.data;
+        setTestimonials(Array.isArray(data) ? data : []);
       } catch (err) {
         console.error('Error fetching testimonials:', err);
         setErrorTestimonials('Failed to load testimonials');

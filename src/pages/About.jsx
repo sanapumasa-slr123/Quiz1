@@ -14,7 +14,9 @@ function About() {
       try {
         setLoading(true);
         const response = await getTeamMembers();
-        setTeamMembers(response.data);
+        // Handle both paginated and direct array responses
+        const data = response.data.results || response.data;
+        setTeamMembers(Array.isArray(data) ? data : []);
       } catch (err) {
         console.error('Error fetching team members:', err);
         setError('Failed to load team members');
