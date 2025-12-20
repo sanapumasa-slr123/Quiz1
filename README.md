@@ -24,14 +24,25 @@ Backend runs at `http://localhost:8000`
 
 ## Features
 
-- Home, About, and Contact pages
-- Services and team member listings
-- Contact form with database submission
-- Team member profiles with images
-- Responsive mobile design
+### Frontend (React)
+- **Single Page Application (SPA)**: Built with React 19 for fast, dynamic user experience
+- **Three Main Pages**: Home, About, Contact with seamless navigation via React Router
+- **Home Page**: Hero section, services listing, testimonials carousel
+- **About Page**: Team member profiles with images and contact information
+- **Contact Page**: Form submission to backend API with validation
+- **Responsive Design**: Mobile-first approach using Bootstrap 5 with Bootswatch Lux theme
+- **API Integration**: Axios-based HTTP client for seamless frontend-backend communication
+
+### Backend (Django REST Framework)
+- Services API endpoints for listing and retrieving water services
+- Team member management with image URLs
+- Testimonials management and display
+- Contact inquiry submission and tracking
+- Comprehensive API documentation at `/api/routes/`
 
 ## Tech Stack
 
-- Frontend: React 19, React Router, Bootstrap 5
-- Backend: Django 4.2, Django REST Framework
-- Database: SQLite3
+- **Frontend**: React 19, React Router v6, Bootstrap 5, Bootswatch Lux theme, Axios
+- **Backend**: Django 4.2, Django REST Framework 3.14, django-cors-headers
+- **Database**: SQLite3
+- **Environment Management**: python-dotenv for backend, .env for frontend
